@@ -24,3 +24,7 @@ body {
     font-family: "Roboto", sans-serif;
     color: #ffffff;
 }
+
+body.is-open {
+    overflow: hidden;
+}

@@ -1,8 +1,16 @@
 .header {
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    
     border-bottom: 1px solid #ECECEC;
+
+    @media screen and (max-width: 767px) {
+        position: relative;
+        // padding-top: 10px;
+        // padding-bottom: 10px;
+        .container {
+            height: 100%;
+        }
+    }
+
 
     @media screen and (min-width: 768px) {
         padding-top: 0;
@@ -13,6 +21,7 @@
         padding-top: 24px;
         padding-bottom: 25px;
     }  
+
 }
 
 
@@ -24,7 +33,6 @@
 
 .menu-button {
     position: absolute;
-    top: 10px;
     right: 15px;
     padding: 0;
     display: flex;
@@ -36,6 +44,8 @@
     background-color: transparent;
     cursor: pointer;
     z-index: 99;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
     
     
     @media screen and (min-width: 768px) {
@@ -58,8 +68,6 @@
 
 .menu-button.is-open .icon-cross {
     display: none;
-    
-    
     &:hover,
     &:focus {
         color: #2196F3;
@@ -117,6 +125,11 @@
 .header__logo{
     color: #000000;
     margin-right: 67px;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }
 
 .logo__web {
@@ -207,7 +220,7 @@
 
     @media screen and (min-width: 768px) {
     
-        @include font (null, 14px, 1.14, null);
+        @include font (500, 14px, 1.14, 0.02em);
         color: var(--header-color);
         
         transition-property: color;
