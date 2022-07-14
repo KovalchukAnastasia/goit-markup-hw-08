@@ -77,7 +77,7 @@
 
 .mob-menu {
     background-color: #FFFFFF;
-    padding: 48px 40px;
+    padding: 48px 25px;
   
     @media screen and (max-width: 767px) { 
         display: none;
@@ -269,7 +269,7 @@
 
 @media screen and (max-width: 767px) {
     color: #757575;
-    @include font (500, 24px, 1.17, 0.02em);
+    @include font (500, 22px, 1.17, 0.02em);
     &:hover,
     &:focus {
         color: #2196F3;
@@ -300,7 +300,7 @@
     @media screen and (max-width: 767px) {
         margin-left: 0;
         margin-bottom: 32px;
-        @include font (500, 34px, 1.18, 0.02em);
+        @include font (500, 27px, 1.18, 0.02em);
         color: #2196F3;
         &:hover,
         &:focus {
@@ -374,10 +374,11 @@
 }
 
 .menu-soc-link{
-    font-size: 18px;
+    font-size: 13px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196F3;
+
 }
 
 .menu-soc-item:not(:first-child) {
