@@ -1,19 +1,12 @@
 .work {
-
-    
-    
     @media screen and (max-width: 1199px) {
-        display: none;
-        
+        display: none; 
     }
     @media screen and (min-width: 1200px) {
-        
         padding-top: var(--typical-padding);
         padding-bottom: var(--typical-padding);
     }
-    
 }
-
 
 .work-title {
     @include font (700, 36px, 1.17, 0.03em);
@@ -32,7 +25,6 @@
 
 .thumb-work {
     position: relative;
-
 }
 
 .thumb-work-title {
@@ -42,7 +34,6 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     display: flex;
     align-items: center;
     justify-content: center;

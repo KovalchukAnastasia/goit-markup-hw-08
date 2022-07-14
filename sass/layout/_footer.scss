@@ -1,46 +1,20 @@
 .footer {
-
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
-    // display: flex;
-    // flex-wrap: wrap;
 
     @media screen and (max-width:767px) {
         text-align: center;
     }
     @media screen and (max-width:1199px) {
         text-align: center;
-    }
-    // @media screen and (min-width:1px) {
-    //     text-align: center;
-    // }
-    
-    
-
-    @media screen and (min-width:768px) {
-       
-        // display: flex;
-        
-        // .container {
-        //     display: flex;
-        //     align-items: baseline;
-        // }
-    }
-    @media screen and (max-width:1199px) {
-        text-align: center;
-    }
-    
+    } 
     @media screen and (min-width:1200px) {
-        
-        background-color: #2F303A;
-        padding-top: 60px;
-        padding-bottom: 60px;
+
         display: flex;
         
         .container {
             display: flex;
-            // align-items: baseline;
         }
     }
 }
@@ -51,63 +25,23 @@
         display: flex;
         justify-content: center;
     
-    }
-    // @media screen and (max-width:1199px) {
-    
-    //     display: flex;
-        
-    
-    // }
-
-    // @media screen and (min-width:1200px) {
-    
-    //     display: flex;
-    
-    
-    // }
-    
+    } 
 }
-
-
-
 
 .logo--color-white{ 
     color: #FFFFFF;
-    // @media screen and (min-width:768px) {
-    
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    
-    // }
-   
-
-      
 }
 
 
 .footer-contacts {
+    margin-top: 20px;
 
     @media screen and (max-width:767px) {
         text-align: center;
-        margin-top: 20px; 
         margin-bottom: 60px;
     }
-    @media screen and (min-width:768px) {
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        margin-top: 20px;
-        // margin-right: 70px;
-    }
-    @media screen and (min-width:1200px) {
-        margin-top: 20px;
-        // margin-right: 70px;
-    }
-    
 
 }
-
 
 .footer-contacts__link {
     font-style: normal;
@@ -117,7 +51,6 @@
     transition-property: color;
     @include transition ();
 
-
         &:hover,
         &:focus {
             color: #2196F3;
@@ -126,7 +59,6 @@
 
 .footer-contacts__mail {
     margin-top: 9px;
-
 }
 
 .footer-contacts__mail--link {
@@ -137,22 +69,19 @@
     transition-property: color;
     @include transition ();
 
-
         &:hover,
         &:focus {
             color: #2196F3;
         }
-
 }
 
 .footer-contacts__tel {
     margin-top: 9px;
-
 }
 
 .footer-contacts__tel--link {
     font-style: normal;
-    @include font (null, 14px, 1.71, 0.03em);
+    @include font (400, 14px, 1.71, 0.03em);
     color: rgba(255, 255, 255, 0.6);
 
     transition-property: color;
@@ -162,7 +91,6 @@
         &:focus {
             color: #2196F3;
         }
-
 }
 
 .footer-communications {
@@ -172,6 +100,7 @@
 
     @media screen and (min-width:1200px) {
         margin-right: 70px;
+        width: 231px;
     }
     
 }
@@ -197,8 +126,6 @@
     }
 }
 
-
-
 .social__link {
     display: flex;
     align-items: center;
@@ -206,17 +133,14 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.1);
 
     transition-property: background-color;
     @include transition ($td:250ms, $ttf:cubic-bezier(0.4, 0, 0.2, 1));
 
-
         &:hover,
         &:focus {
-        
             background-color: #2196F3;
         }
 
@@ -235,9 +159,7 @@
         fill: #FFFFFF;
         background-color: #2196F3;
     }
-
 }
-
 
 .footer__social {
 
@@ -246,102 +168,46 @@
         margin-bottom: 60px;
     }
     
-    
-    
     @media screen and (min-width:768px) {
-    
         margin-right: 93px;
-
     }
 
-    @media screen and (min-width:1200px) {
-    
-        margin-right: 93px;
-    
-    }
-    
 }
 
 .footer-form {
-
     @media screen and (min-width:768px) {
        margin-top: 60px;
     }
     @media screen and (min-width:1200px) {
         margin: 0;
-        // margin-left: auto;
+        max-width: 570px;
+    
     }
     
 
 }
 
 .footer__input {
-
-    @media screen and (max-width:767px) {
-        // text-align: center;
-        width: 100%;
+        width: 358px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         background-color: transparent;
         outline: transparent;
         color: #FFFFFF;
-        // padding: 15px 16px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        padding-left: 18px;
+            margin-top: 20px;
+            margin-bottom: 20px;
 
-        
-        &::placeholder {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.25;
-            letter-spacing: 0.03em;
-            color: rgba(255, 255, 255, 0.6);
-        }
+    @media screen and (max-width:767px) {
+   
+        width: 100%;
+ 
     }
 
     @media screen and (min-width:768px) {
-        // text-align: center;
         width: 450px;
-        height: 50px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        border-radius: 4px;
-        background-color: transparent;
-        outline: transparent;
-        color: #FFFFFF;
-        // padding: 15px 16px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    
-    
-        &::placeholder {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.25;
-            letter-spacing: 0.03em;
-            color: rgba(255, 255, 255, 0.6);
-        }
     }
-
-    @media screen and (min-width:1200px) {
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    background-color: transparent;
-    outline: transparent;
-    color: #FFFFFF;
-    padding-left: 18px;
-    
-    &::placeholder {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
-    }
-    }
-   
         
 }
 
@@ -352,10 +218,10 @@
     }
     @media screen and (min-width:768px) {
         display: block;
-        // display: flex;
+    
     }
     @media screen and (min-width:1200px) {
-        // display: block;
+    
         display: flex;
         align-items: center;
         justify-content: center;
@@ -363,83 +229,44 @@
 }
 
 .footer__btn {
-
-    @media screen and (max-width:767px) {
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        @include font (700, 16px, 1.88, 0.06em);
-        color: #FFFFFF;
-        cursor: pointer;
-        background-color: #2196F3;
-        min-width: 200px;
-        height: 50px;
-        // margin-left: 12px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-    
-        border: 0;
-        padding: 0;
-        // padding-right: 28px;
-        // padding-left: 29px;
-        // padding-top: 0;
-        // padding-bottom: 0;
-    }
-    
-    @media screen and (min-width:768px) {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     @include font (700, 16px, 1.88, 0.06em);
     color: #FFFFFF;
     cursor: pointer;
     background-color: #2196F3;
     min-width: 200px;
     height: 50px;
-    // margin-left: 12px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width:767px) {
+        margin: 0 auto;
+        border: 0;
+        padding: 0;
+    }
     
-    border: 0;
-    padding: 0;
-    // padding-right: 28px;
-    // padding-left: 29px;
-    // padding-top: 0;
-    // padding-bottom: 0;
+    @media screen and (min-width:768px) {
+        margin: 0 auto;
+        border: 0;
+        padding: 0;
     }
     @media screen and (min-width:1200px) {
-        @include font (700, 16px, 1.88, 0.06em);
-        color: #FFFFFF;
-        cursor: pointer;
-        background-color: #2196F3;
-        min-width: 200px;
-        height: 50px;
-        margin-left: 12px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
+
+
+        margin-left: 12px;        
         border: 0;
         padding-right: 28px;
         padding-left: 29px;
         padding-top: 0;
         padding-bottom: 0;
-    
-
 }
-
 
 .icon__send {
     @media screen and (min-width:1200px) {
         margin-left: 10px;
-    
-    
-    }
-    
+    }   
 }
 
 }

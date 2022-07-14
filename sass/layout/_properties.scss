@@ -1,9 +1,7 @@
 .properties {
-    
     padding-top: 60px;
     padding-bottom: 60px;
 
-    
     @media screen and (min-width:1200px) {
         padding-top: var(--typical-padding);
         padding-bottom: 0;
@@ -26,12 +24,10 @@
 
 .properties-text {
     @include font (400, 14px, 1.71, 0.03em);
-    
     color: var(--second-title-color);
 }
 
 .properties-item {
-    
     width: 100%;
     
     @media screen and (min-width:768px) {
@@ -43,13 +39,8 @@
     }
 }
 
-// .properties-item:not(:last-child) {
-//     margin-right: 30px;
-// }
-
 .properties-icon {
     width: 100%;
-    
     height: 120px;
     display: flex;
     margin-bottom: 30px;

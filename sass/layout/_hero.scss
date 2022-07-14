@@ -1,6 +1,4 @@
 .main {
-
-   
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -21,12 +19,7 @@
             rgba(47, 48, 58, 0.4)),
         url(../images/hero-bg-mob-2x.jpg);
         }
-
-        
-    
-
-    
-    @media screen and (min-width:768px) {
+        @media screen and (min-width:768px) {
         padding-left: 164px;
         padding-right: 164px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
@@ -57,14 +50,10 @@
                     rgba(47, 48, 58, 0.4)),
                 url(../images/main-img-2x.jpg);
         }
-    }
-   
-    
+    }   
 }
 
-
 .main-title {
-   
         margin-top: 0;
         margin-bottom: 30px;
         margin-right: auto;
@@ -76,12 +65,8 @@
         max-width: 360px;
         width: 100%;
         text-align: center;
-    
-    
-    
-    
+
     @media screen and (min-width:1200px) {
-        
         padding-left: 40px;
         padding-right: 40px;
         font-size: 44px;
@@ -89,8 +74,6 @@
         max-width: 696px;
         
     }
-
-
 }
 
 .main-btn {

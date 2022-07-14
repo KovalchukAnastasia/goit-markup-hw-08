@@ -1,20 +1,13 @@
 .team {
 
     background-color: #F5F4FA;
-
     padding-top: 60px;
     padding-bottom: 60px;
-
-    @media screen and (min-width:768px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
 
     @media screen and (min-width:1200px) {
     padding-top: var(--typical-padding);
     padding-bottom: var(--typical-padding);
     }
-
 }
 
 .team-first-title {
@@ -32,7 +25,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    
 }
 
 .team-second-title {
@@ -47,17 +39,11 @@
     @include font (null, 16px, 1.19, 0.03em);
     color: var(--second-title-color);
     text-align: center;
-
 }
 
 .team-description {
     padding-bottom: 16px;
-
 }
-
-// .team-item+.team-item {
-//     margin-left: 30px;
-// }
 
 .team-item {
     background-color: var(--main-title-color);
@@ -83,7 +69,6 @@
     width: 44px;
     height: 44px;
     margin-left: 10px;
-
 }
 
 .team-soc-item:first-child {
@@ -98,23 +83,18 @@
     height: 100%;
     border-radius: 50%;
     cursor: pointer;
-
     transition-property: background-color;
     @include transition ();
 
         &:hover,
         &:focus {
-        
             background-color: #2196F3;
         }
-
 }
 
 .team-soc-icon {
-
     background-color: #FFFFFF;
     fill: #AFB1B8;
-
     transition-property: background-color;
     @include transition ();
 
@@ -124,6 +104,5 @@
 .team-soc-link:focus .team-soc-icon {
 
     background-color: #2196F3;
-
     fill: #FFFFFF;
 }
