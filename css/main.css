@@ -625,7 +625,6 @@ body.modal-open {
   overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 1;
 }
 
 .backdrop.is-hidden .footer-input {
@@ -638,11 +637,24 @@ body.modal-open {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: calc(100% - 30px);
+  width: calc(100% - 15px);
   background-color: #ffffff;
   border-radius: 5px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+}
+
+@media (min-width: 462px) {
+  .modal {
+    position: fixed;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -788,6 +800,11 @@ body.modal-open {
   }
 }
 
+.check-agree {
+  margin-left: 8px;
+  text-align: start;
+}
+
 .check-text a {
   color: #2196F3;
 }
@@ -798,7 +815,6 @@ body.modal-open {
   height: 15px;
   border: 1px solid #212121;
   border-radius: 2px;
-  margin-right: 8px;
   outline: transparent;
   transition-property: color;
   transition-duration: 250ms;
@@ -811,7 +827,6 @@ body.modal-open {
   height: 15px;
   border: 1px solid #2196F3;
   border-radius: 2px;
-  margin-right: 8px;
   outline: transparent;
 }
 
