@@ -1373,7 +1373,6 @@ body.is-open {
   outline: transparent;
   color: #FFFFFF;
   padding-left: 18px;
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -1404,8 +1403,6 @@ body.is-open {
 @media screen and (min-width: 1200px) {
   .footer-form__input {
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 
