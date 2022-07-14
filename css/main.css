@@ -273,6 +273,7 @@ body.modal-open {
   .menu {
     display: flex;
     align-items: center;
+    margin-bottom: 0;
   }
 }
 
@@ -483,6 +484,7 @@ body.modal-open {
     color: var(--second-title-color);
     margin-left: 0px;
     margin-top: 10px;
+    margin-bottom: 0px;
     display: flex;
     align-items: center;
     transition-property: color;
