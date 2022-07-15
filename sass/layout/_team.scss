@@ -11,13 +11,14 @@
 }
 
 .team-first-title {
-    @include font (700, 36px, 1.18, 0.03em);
+    @include font (700, 28px, 1.17, 0.03em);
     text-align: center;
     color: var(--header-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     
     @media screen and (min-width:1200px) {
-        line-height: 1.17;
+        @include font (700, 36px, 1.17, 0.03em);
+        margin-bottom: 50px;
     }
 }
 

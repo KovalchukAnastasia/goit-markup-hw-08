@@ -38,7 +38,11 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-    z-index: 99;
+    z-index: 9;
+    &:hover,
+    &:focus {
+        fill: #2196F3;
+    }
     
     @media screen and (min-width: 768px) {
         display: none;
@@ -54,20 +58,13 @@
 .menu-button.is-open {
     position: relative;
     right: 0;
-        &:hover,
-        &:focus {
-            color: #2196F3;
-        }
+
 
 }
 
 .menu-button.is-open .icon-menu {
     
     display: block;
-        &:hover,
-        &:focus {
-            color: #2196F3;
-        }
 
 }
 
@@ -76,25 +73,14 @@
 
 }
 
-.icon-cross {
-    &:hover,
-    &:focus {
-        color: #2196F3;
-    }
-}
-
-.icon-menu {
-    &:hover,
-    &:focus {
-        color: #2196F3;
-    }
-}
 
 .mob-menu {
     background-color: #FFFFFF;
     padding: 48px 25px;
+
     
-  
+    
+
     @media screen and (max-width: 767px) { 
         display: none;
         position: fixed;
@@ -106,7 +92,9 @@
         overflow-y: scroll;
         
         &.is-open {
-            display: block;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
         }  
     }
 
@@ -157,8 +145,9 @@
 
 
 .menu {
+
         @media screen and (max-width: 479px) {
-            margin-bottom: 240px;
+            margin-bottom: 0;
             text-align: left;
         }
     @media screen and (min-width: 480px) {
@@ -288,7 +277,7 @@
 
 .contacts__mail {
 
-    @media screen and (max-width: 470px) {
+    @media screen and (max-width: 479px) {
         color: #757575;
         @include font (500, 22px, 1.17, 0.02em);
     
