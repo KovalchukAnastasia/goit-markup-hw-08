@@ -713,9 +713,8 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    max-height: 581px;
-    height: 100%;
-    overflow-y: scroll;
+    height: 581px;
+    overflow: hidden;
   }
 }
 
