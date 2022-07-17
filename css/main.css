@@ -1428,6 +1428,12 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__social {
+    margin-right: 93px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer-form {
     margin-top: 60px;
