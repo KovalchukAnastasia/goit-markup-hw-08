@@ -1429,12 +1429,6 @@ body.modal-open {
 }
 
 @media screen and (min-width: 768px) {
-  .footer__social {
-    margin-right: 93px;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .footer-form {
     margin-top: 60px;
   }
@@ -1618,7 +1612,6 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .project-item {
     width: calc((100% - 30px) / 2);
-    height: 440px;
   }
 }
 
